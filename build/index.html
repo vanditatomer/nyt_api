@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NY Times</title>
+    <!-- MAIN CSS STYLESHEET -->
+          <link type="text/css" rel="stylesheet" href="./css/build.css" />
+          <!-- FONT AWESOME LINK -->
+          <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  </head>
+  <body class="page-color">
+    <header>
+      <div class="flex flex-column flex-justify-center flex-items-center header-mobile header-tablet header-desktop">
+        <!-- logo -->
+        <div class="flex flex-column flex-items-center flex-justify-center ">
+          <img src="./images/nyt-logo.svg" class="logo-mobile logo-tablet logo-desktop logo-super-mobile logo-super-tablet logo-super-desktop" />
+        </div>
+        <!-- section dropdown -->
+        <div class="section-mobile section-tablet section-desktop">
+          <div class="section-heading-mobile section-heading-tablet section-heading-desktop">
+            <h3>Choose a section:</h3>
+          </div>
+          <div>
+            <select id="sections" class="dropdown-mobile dropdown-tablet dropdown-desktop"></select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="flex flex-row flex-wrap">
+        <div class="flex flex-row flex-wrap">
+          <!-- clone used for stories -->
+          <div id="clone" class="flex flex-column flex-justify-end story-box-mobile story-box-tablet story-box-desktop">
+            <a></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-mobile footer-tablet footer-desktop">
+      <div>
+        <p>&copy Copyright 2016 INSTANEWS</p>
+      </div>
+      <!-- Google CDN for jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- JavaScript -->
+      <script src="./js/bundle.js"></script>
+    </footer>
+  </body>
+</html>
